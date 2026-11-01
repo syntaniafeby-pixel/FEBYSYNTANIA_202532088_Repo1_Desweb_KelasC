@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Usulan Permainan - Egrang Tanah Pasundan</title>
+</head>
+<body>
+  <header>
+    <h1>Egrang Tanah Pasundan</h1>
+    <p>Mengenal permainan tradisional berjalan di atas bambu dari Jawa Barat</p>
+    <nav>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="permainan.html">Mengenal Egrang</a></li>
+        <li><a href="usulan.html">Usulan Permainan</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Usulkan Permainan Tradisional</h2>
+    <p>Tahu permainan tradisional lain dari Jawa Barat? Isi formulir berikut. Kolom bertanda wajib harus diisi.</p>
+
+    <form action="#" method="get">
+      <fieldset>
+        <legend>Data Pengusul</legend>
+
+        <p>
+          <label for="nama">Nama lengkap (wajib):</label><br>
+          <input type="text" id="nama" name="nama" required minlength="3">
+        </p>
+
+        <p>
+          <label for="email">Email (wajib):</label><br>
+          <input type="email" id="email" name="email" required>
+        </p>
+
+        <p>
+          <label for="usia">Usia:</label><br>
+          <input type="number" id="usia" name="usia" min="5" max="100">
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Data Permainan</legend>
+
+        <p>
+          <label for="nama-permainan">Nama permainan (wajib):</label><br>
+          <input type="text" id="nama-permainan" name="nama_permainan" required>
+        </p>
+
+        <p>Jenis permainan (wajib):</p>
+        <p>
+          <input type="radio" id="jenis-fisik" name="jenis" value="fisik" required>
+          <label for="jenis-fisik">Permainan fisik</label><br>
+          <input type="radio" id="jenis-strategi" name="jenis" value="strategi">
+          <label for="jenis-strategi">Permainan strategi</label><br>
+          <input type="radio" id="jenis-musik" name="jenis" value="musik">
+          <label for="jenis-musik">Permainan dengan nyanyian</label>
+        </p>
+
+        <p>Dimainkan oleh:</p>
+        <p>
+          <input type="checkbox" id="pemain-anak" name="pemain" value="anak">
+          <label for="pemain-anak">Anak-anak</label><br>
+          <input type="checkbox" id="pemain-remaja" name="pemain" value="remaja">
+          <label for="pemain-remaja">Remaja</label><br>
+          <input type="checkbox" id="pemain-dewasa" name="pemain" value="dewasa">
+          <label for="pemain-dewasa">Dewasa</label>
+        </p>
+
+        <p>
+          <label for="kabupaten">Asal daerah:</label><br>
+          <select id="kabupaten" name="daerah">
+            <option value="">-- Pilih daerah --</option>
+            <option value="bandung">Bandung</option>
+            <option value="garut">Garut</option>
+            <option value="tasikmalaya">Tasikmalaya</option>
+            <option value="lainnya">Lainnya</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="deskripsi">Deskripsi singkat (wajib):</label><br>
+          <textarea id="deskripsi" name="deskripsi" rows="5" cols="40" required minlength="20"></textarea>
+        </p>
+      </fieldset>
+
+      <p>
+        <button type="submit">Kirim Usulan</button>
+        <button type="reset">Hapus Isian</button>
+      </p>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Feby Syntania (202532088) - Laprak 1 Desain Web, Institut Teknologi PLN</p>
+    <address>Kontak: <a href="usulan.html">Halaman Usulan</a></address>
+  </footer>
+</body>
+</html>
